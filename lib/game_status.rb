@@ -36,15 +36,15 @@ def won? (board)
   false
 end
 
-def full? (board)
-  #should return true IF all elements have X or O
-  all_filled = board.all? |cell| {cell == "X" || cell == "O"}
-    if all_filled == true
-    return true
-  else
-    false
-  end
-end
+# def full? (board)
+#   #should return true IF all elements have X or O
+#   all_filled = board.all? |cell| {cell == "X" || cell == "O"}
+#     if all_filled == true
+#     return true
+#   else
+#     false
+#   end
+# end
 
 def draw? (board)
 #returns true IF board !won? && board = full
