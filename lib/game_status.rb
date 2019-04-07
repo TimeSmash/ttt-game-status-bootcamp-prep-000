@@ -50,14 +50,12 @@ def draw? (board)
 #returns true IF board !won? && board = full
 #meaning returns false IF won?
 #returns false IF !won? && !full
-  if (!won?(board) && full?(board))
+  if !won?(board) && full?(board)
     true
-  else if (!won?(board) && !full?(board))
+  elsif !won?(board) && !full?(board)
     false
-  else if (!won?(board))
+  elsif (!won?(board))
     false
-  end
-  end
   end
 end
 
