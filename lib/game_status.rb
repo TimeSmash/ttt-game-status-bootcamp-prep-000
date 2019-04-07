@@ -72,5 +72,8 @@ def winner(board)
   #Need to take this array of indexes and iterate through it to see if board at those indexes equals X
   if won?(board) && won?(board).all? {|ele| ele == "X"}
     return "X"
+  elsif won?(board) && won?(board).all? {|ele| ele == "O"}
+    return "O"
   end
+  nil
 end
