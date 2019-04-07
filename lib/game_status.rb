@@ -38,7 +38,7 @@ end
 
 def full? (board)
   #should return true IF all elements have X or O
-  all_filled = board.all? |cell| {cell == "X" || cell == "O"}
+  all_filled = board.all? { |cell| cell == "X" || cell == "O"}
     if all_filled == true
     return true
   else
@@ -54,7 +54,7 @@ def draw? (board)
     true
   elsif !won?(board) && !full?(board)
     false
-  elsif (!won?(board))
+  elsif !won?(board)
     false
   end
 end
