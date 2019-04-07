@@ -68,7 +68,9 @@ def over?(board)
 end
   
 def winner(board)
-  if won?(board) && won?(board) == ["X","X","X"]
+  #won? returns array of numbers
+  #Need to take this array of indexes and iterate through it to see if board at those indexes equals X
+  if won?(board) && won?(board).all? 
     return "X"
   end
 end
