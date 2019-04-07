@@ -46,6 +46,21 @@ def full? (board)
   end
 end
 
-def draw?(board)
-  if
+def draw? (board)
+#returns true IF board !won? && board = full
+#meaning returns false IF won?
+#returns false IF !won? && !full
+  if (!won?(board) && full?(board))
+    true
+  else if (!won?(board) && !full?(board))
+    false
+  else if (!won?(board))
+    false
+  end
+  end
+  end
+end
+
+def over?(board)
+  if ((won?(board) && full?(board)) || ((won?(board) && !full?(board)) || draw?(board)) 
   
